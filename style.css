@@ -1,0 +1,88 @@
+/*
+	Syntax for CSS Styling:
+
+	Selector {
+		property: value;
+	}
+
+	Sa CSS may Specifity Rule
+	#id - Highest Priority
+	element/<tag>
+	.class
+	Universal (*) - Lowest Priority
+*/
+
+/*
+	Universal Selector (*) - Selects all the HTML elements
+	Kung need mag change ng font sa tanan or uno kay mag gamit ng "*"
+*/
+
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+/*
+	tag/element selector (<tagname>)
+ Selector - Selects a HTML element using tag name
+*/
+
+h1,h2 {
+	font-family: "Montserrat", sans-serif;
+}
+
+img{
+	height: 250px;
+	width: 250px;
+}
+
+/*
+	ID Selector (#idName) - use the ID attribute to select an element.
+*/
+#landing{
+	/* vh = veiwport height */
+	height: 100vh;
+	/* Center the content vertically */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*
+	Class Selector (.className)
+*/
+
+.jumbotron {
+	background-color: transparent;
+}
+
+#gallery {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+}
+
+h2{
+	color: #007bff;
+}
+
+.tools {
+	color: white;
+	height: 200px;
+	width: 75%;
+	border: 5px solid #f2f2f2;
+	margin: 20px;
+	padding: 25px;
+}
+
+html{
+	scroll-behavior: smooth;
+}
